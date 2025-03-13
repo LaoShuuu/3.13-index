@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <h2> 表單 </h2>
+        <h4>個人資料</h4>
+        <fieldset>
+            <label for="fname">姓名：</label><br>
+            <input type="text" id="fname" name="fname" value="林宜璇"><br>
+            <label for="lname">地址：</label><br>
+            <input type="text" id="lname" name="lname" ><br><br>
+        </fieldset>
+
+        <h4>行程相關</h4>        
+        <fieldset>
+            可參加行程日期：(可複選)
+            <input type="checkbox" name="time[]" value="Mid" >期中考後
+            <input type="checkbox" name="time[]" value="Final" >期末考後
+            <input type="checkbox" name="time[]" value="summer">暑假期間<br>
+
+            喜歡的地點是：(單選) 
+            <input type="radio" name="spots" value="spot1">澎湖
+            <input type="radio" name="spots" value="spot2" >綠島
+            <input type="radio" name="spots" value="spot3">阿里山
+            <input type="radio" name="spots" value="spot4">台北101<br>
+
+
+        </fieldset>
+        <input type="submit" value="送出">
+        <input type="reset" value="重設">
+    </form>
+
+</body>
+</html>
